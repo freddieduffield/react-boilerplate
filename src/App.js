@@ -9,7 +9,7 @@ class App extends Component {
     const { count } = this.state;
     return (
       <>
-        <h1>shalom world</h1>
+        <h1>shalom world!!!</h1>
         <h2 className={count > 10 ? 'warning' : null}>Count: {count}</h2>
         <button
           onClick={() => this.setState(state => ({ count: state.count + 1 }))}
