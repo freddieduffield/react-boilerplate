@@ -7,8 +7,10 @@ class App extends Component {
   state = {
     count: 0
   }
+
   render() {
     const { count } = this.state
+
     return (
       <>
         <h1>shalom world!!!</h1>
