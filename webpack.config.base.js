@@ -18,20 +18,21 @@ module.exports = {
             [
               '@babel/preset-env',
               {
-                targets: {
+                targets: [
                   'last 2 versions',
                   'not dead',
                   'not < 2%',
                   'not ie 11'
-                },
+                ],
                 useBuiltIns: 'entry'
               }
             ],
             '@babel/preset-react'
           ],
           plugins: [
+            'react-hot-loader/babel',
             '@babel/plugin-proposal-class-properties',
-            'react-hot-loader/babel'
+            '@babel/plugin-syntax-dynamic-import'
           ]
         }
       },
